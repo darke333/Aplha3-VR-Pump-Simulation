@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384c4d03a551c44448145f4093304119, type: 3}
   m_Name: ScreenSpaceReflection
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   quality:
     m_OverrideState: 0
@@ -114,7 +114,7 @@ MonoBehaviour:
     m_Value: 0
   minSmoothness:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.9
     min: 0
     max: 1
   smoothnessFadeStart:
@@ -123,16 +123,16 @@ MonoBehaviour:
     min: 0
     max: 1
   reflectSky:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   depthBufferThickness:
     m_OverrideState: 0
-    m_Value: 0.01
+    m_Value: 0.001
     min: 0
     max: 1
   screenFadeDistance:
     m_OverrideState: 0
-    m_Value: 0.1
+    m_Value: 0
     min: 0
     max: 1
   layerMask:
@@ -207,12 +207,12 @@ MonoBehaviour:
     max: 1
   scatter:
     m_OverrideState: 0
-    m_Value: 0.7
+    m_Value: 0
     min: 0
     max: 1
   tint:
     m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_Value: {r: 1, g: 0.91456795, b: 0, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
@@ -306,7 +306,7 @@ MonoBehaviour:
     max: 100
   tint:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 100
     min: -100
     max: 100
 --- !u!114 &6640133647794636954
@@ -414,7 +414,7 @@ MonoBehaviour:
     max: 1
   smoothness:
     m_OverrideState: 0
-    m_Value: 0.2
+    m_Value: 0.562
     min: 0.01
     max: 1
   roundness:
