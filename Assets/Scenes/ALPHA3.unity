@@ -98,7 +98,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 1.31072
-  m_LightingDataAsset: {fileID: 112000000, guid: fa8f063857ac29c4a8a3c2020499de6f,
+  m_LightingDataAsset: {fileID: 112000000, guid: 0f1c740fd5d150742b19d7532a8b7dc8,
     type: 2}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -20911,13 +20911,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035111233}
-  m_LocalRotation: {x: -0.66394824, y: -0.6776826, z: -0.12486153, w: -0.29039404}
+  m_LocalRotation: {x: -0.67150265, y: -0.6537209, z: -0.074174635, w: -0.3409273}
   m_LocalPosition: {x: -2.2873, y: 7.1319, z: 8.2234}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 167.503, y: 685.04297, z: 264.878}
+  m_LocalEulerAnglesHint: {x: 158.845, y: 684.213, z: 264.637}
 --- !u!114 &2035111237
 MonoBehaviour:
   m_ObjectHideFlags: 0
