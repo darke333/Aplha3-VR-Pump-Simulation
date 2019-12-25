@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 64043169}
   - component: {fileID: 64043171}
   - component: {fileID: 64043170}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Socket_Unwrapped (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   - component: {fileID: 132819223}
   - component: {fileID: 132819225}
   - component: {fileID: 132819224}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceTwo_Unwrapped002 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 154415298}
   - component: {fileID: 154415300}
   - component: {fileID: 154415299}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -791,7 +791,7 @@ GameObject:
   - component: {fileID: 191179384}
   - component: {fileID: 191179386}
   - component: {fileID: 191179385}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceThree_Unwrapped001 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4999,7 +4999,7 @@ GameObject:
   - component: {fileID: 276925837}
   - component: {fileID: 276925839}
   - component: {fileID: 276925838}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniseOne_Unwrapped001 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5082,7 +5082,7 @@ GameObject:
   - component: {fileID: 295652083}
   - component: {fileID: 295652085}
   - component: {fileID: 295652084}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Socket001_low_Unwrapped (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5150,99 +5150,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295652082}
   m_Mesh: {fileID: -1973974653378744361, guid: 96e65c43208bc6d428acffaa46bfcfdf, type: 3}
---- !u!1 &349758580
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 349758581}
-  - component: {fileID: 349758584}
-  - component: {fileID: 349758583}
-  - component: {fileID: 349758582}
-  m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &349758581
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 349758580}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.829, z: 0.909}
-  m_LocalScale: {x: 0.2982, y: 0.2982, z: 0.2982}
-  m_Children: []
-  m_Father: {fileID: 4478698598523308599}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &349758582
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 349758580}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &349758583
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 349758580}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &349758584
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 349758580}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &466856038
 GameObject:
   m_ObjectHideFlags: 0
@@ -5254,7 +5161,7 @@ GameObject:
   - component: {fileID: 466856039}
   - component: {fileID: 466856041}
   - component: {fileID: 466856040}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Socket_Unwrapped (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5333,7 +5240,7 @@ GameObject:
   - component: {fileID: 477183943}
   - component: {fileID: 477183945}
   - component: {fileID: 477183944}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceThree_Unwrapped001 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6413,7 +6320,7 @@ GameObject:
   - component: {fileID: 593226923}
   - component: {fileID: 593226925}
   - component: {fileID: 593226924}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceTwo_Unwrapped002 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6570,7 +6477,7 @@ GameObject:
   - component: {fileID: 632446498}
   - component: {fileID: 632446500}
   - component: {fileID: 632446499}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LightningInRoom (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6651,7 +6558,7 @@ GameObject:
   - component: {fileID: 644883937}
   - component: {fileID: 644883939}
   - component: {fileID: 644883938}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6850,7 +6757,7 @@ GameObject:
   - component: {fileID: 649388034}
   - component: {fileID: 649388036}
   - component: {fileID: 649388035}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceThree_Unwrapped001 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6929,7 +6836,7 @@ GameObject:
   - component: {fileID: 680064748}
   - component: {fileID: 680064750}
   - component: {fileID: 680064749}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceTwo_Unwrapped002 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7026,7 +6933,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalRotation.z
@@ -7034,7 +6941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_RootOrder
@@ -7046,7 +6953,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -7065,7 +6972,7 @@ GameObject:
   - component: {fileID: 741333893}
   - component: {fileID: 741333895}
   - component: {fileID: 741333894}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Socket001_low_Unwrapped (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11214,7 +11121,7 @@ GameObject:
   - component: {fileID: 790685222}
   - component: {fileID: 790685224}
   - component: {fileID: 790685223}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LightningInRoom (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11295,7 +11202,7 @@ GameObject:
   - component: {fileID: 796962410}
   - component: {fileID: 796962412}
   - component: {fileID: 796962411}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceThree_Unwrapped002 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11374,7 +11281,7 @@ GameObject:
   - component: {fileID: 828333244}
   - component: {fileID: 828333246}
   - component: {fileID: 828333245}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Socket001_low_Unwrapped (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11453,7 +11360,7 @@ GameObject:
   - component: {fileID: 841362999}
   - component: {fileID: 841363001}
   - component: {fileID: 841363000}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceThree_Unwrapped002 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11532,7 +11439,7 @@ GameObject:
   - component: {fileID: 844092131}
   - component: {fileID: 844092133}
   - component: {fileID: 844092132}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11731,7 +11638,7 @@ GameObject:
   - component: {fileID: 851725148}
   - component: {fileID: 851725150}
   - component: {fileID: 851725149}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceThree_Unwrapped001 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12278,7 +12185,7 @@ GameObject:
   - component: {fileID: 1017236104}
   - component: {fileID: 1017236106}
   - component: {fileID: 1017236105}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LightSwitch_Unwrapped (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12400,7 +12307,7 @@ GameObject:
   - component: {fileID: 1037878863}
   - component: {fileID: 1037878865}
   - component: {fileID: 1037878864}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12774,7 +12681,7 @@ GameObject:
   - component: {fileID: 1066572216}
   - component: {fileID: 1066572218}
   - component: {fileID: 1066572217}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceThree_Unwrapped002 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12996,7 +12903,7 @@ GameObject:
   - component: {fileID: 1155653035}
   - component: {fileID: 1155653037}
   - component: {fileID: 1155653036}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LightningInRoom (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13539,7 +13446,7 @@ GameObject:
   - component: {fileID: 1227495568}
   - component: {fileID: 1227495570}
   - component: {fileID: 1227495569}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceTwo_Unwrapped001 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13618,7 +13525,7 @@ GameObject:
   - component: {fileID: 1271334755}
   - component: {fileID: 1271334757}
   - component: {fileID: 1271334756}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LightningInRoom (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13777,7 +13684,7 @@ GameObject:
   - component: {fileID: 1284971001}
   - component: {fileID: 1284971003}
   - component: {fileID: 1284971002}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceTwo_Unwrapped001 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13935,6 +13842,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 717798324764416766, guid: a59216f1aaaf200439a0f2bec96890a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1532957495317975840, guid: a59216f1aaaf200439a0f2bec96890a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14000,10 +13912,20 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 2530303225931079987, guid: a59216f1aaaf200439a0f2bec96890a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3517226613078571385, guid: a59216f1aaaf200439a0f2bec96890a0,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517226613078571385, guid: a59216f1aaaf200439a0f2bec96890a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a59216f1aaaf200439a0f2bec96890a0, type: 3}
@@ -14883,7 +14805,7 @@ GameObject:
   - component: {fileID: 1412157945}
   - component: {fileID: 1412157947}
   - component: {fileID: 1412157946}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceTwo_Unwrapped002 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15281,7 +15203,7 @@ GameObject:
   - component: {fileID: 1517926675}
   - component: {fileID: 1517926677}
   - component: {fileID: 1517926676}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LightningInRoom (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15362,7 +15284,7 @@ GameObject:
   - component: {fileID: 1522346793}
   - component: {fileID: 1522346795}
   - component: {fileID: 1522346794}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15897,7 +15819,7 @@ GameObject:
   - component: {fileID: 1574786509}
   - component: {fileID: 1574786511}
   - component: {fileID: 1574786510}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniseOne_Unwrapped001 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15976,7 +15898,7 @@ GameObject:
   - component: {fileID: 1598437197}
   - component: {fileID: 1598437199}
   - component: {fileID: 1598437198}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceTwo_Unwrapped001 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16051,6 +15973,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5067274982157112737}
     m_Modifications:
+    - target: {fileID: 3078888183528483721, guid: eb62a0b18f30e4d4d93604bcaffe9280,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4040280324643874622, guid: eb62a0b18f30e4d4d93604bcaffe9280,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16116,6 +16043,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.008000001
       objectReference: {fileID: 0}
+    - target: {fileID: 4472823099179039811, guid: eb62a0b18f30e4d4d93604bcaffe9280,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709649955647081462, guid: eb62a0b18f30e4d4d93604bcaffe9280,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6290183011239426417, guid: eb62a0b18f30e4d4d93604bcaffe9280,
         type: 3}
       propertyPath: m_Name
@@ -16125,6 +16062,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290183011239426417, guid: eb62a0b18f30e4d4d93604bcaffe9280,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb62a0b18f30e4d4d93604bcaffe9280, type: 3}
@@ -16320,7 +16262,7 @@ GameObject:
   - component: {fileID: 1664799325}
   - component: {fileID: 1664799327}
   - component: {fileID: 1664799326}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniseOne_Unwrapped001 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16403,7 +16345,7 @@ GameObject:
   - component: {fileID: 1670151971}
   - component: {fileID: 1670151973}
   - component: {fileID: 1670151972}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceThree_Unwrapped002 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17072,7 +17014,7 @@ GameObject:
   - component: {fileID: 1748566158}
   - component: {fileID: 1748566160}
   - component: {fileID: 1748566159}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceTwo_Unwrapped001 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18138,7 +18080,7 @@ GameObject:
   - component: {fileID: 1884115092}
   - component: {fileID: 1884115094}
   - component: {fileID: 1884115093}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LightSwitch_Unwrapped (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18217,7 +18159,7 @@ GameObject:
   - component: {fileID: 1899408496}
   - component: {fileID: 1899408495}
   - component: {fileID: 1899408494}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22486,7 +22428,7 @@ GameObject:
   - component: {fileID: 1915138676}
   - component: {fileID: 1915138678}
   - component: {fileID: 1915138677}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniseOne_Unwrapped001 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22842,7 +22784,7 @@ GameObject:
   - component: {fileID: 2060928587}
   - component: {fileID: 2060928589}
   - component: {fileID: 2060928588}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29120,7 +29062,7 @@ GameObject:
   - component: {fileID: 2094745311}
   - component: {fileID: 2094745313}
   - component: {fileID: 2094745312}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LightningInRoom (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29197,6 +29139,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6844819902694595640}
     m_Modifications:
+    - target: {fileID: 3078888183528483721, guid: eb62a0b18f30e4d4d93604bcaffe9280,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4040280324643874622, guid: eb62a0b18f30e4d4d93604bcaffe9280,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29262,6 +29209,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.008000001
       objectReference: {fileID: 0}
+    - target: {fileID: 4472823099179039811, guid: eb62a0b18f30e4d4d93604bcaffe9280,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709649955647081462, guid: eb62a0b18f30e4d4d93604bcaffe9280,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6290183011239426417, guid: eb62a0b18f30e4d4d93604bcaffe9280,
         type: 3}
       propertyPath: m_Name
@@ -29271,6 +29228,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290183011239426417, guid: eb62a0b18f30e4d4d93604bcaffe9280,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb62a0b18f30e4d4d93604bcaffe9280, type: 3}
@@ -29515,7 +29477,7 @@ GameObject:
   - component: {fileID: 4694485709762185698}
   - component: {fileID: 2984762170517310358}
   - component: {fileID: 108892364290237521}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaPovorot_Unwrapped18 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29577,7 +29539,7 @@ GameObject:
   - component: {fileID: 8290481500884920049}
   - component: {fileID: 8521290940759817719}
   - component: {fileID: 4624060964904729781}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ValveHead_Unwrapped
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29603,7 +29565,7 @@ GameObject:
   - component: {fileID: 3544447540338890442}
   - component: {fileID: 4442530016829438533}
   - component: {fileID: 4753058948013179538}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped039
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29645,7 +29607,7 @@ GameObject:
   - component: {fileID: 7358785286357139646}
   - component: {fileID: 1394841117456312031}
   - component: {fileID: 1620259405045841092}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Truba035
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29695,7 +29657,7 @@ GameObject:
   - component: {fileID: 774991243770243038}
   - component: {fileID: 8208272541425263866}
   - component: {fileID: 6607065415828548063}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceTwo_Unwrapped002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29881,7 +29843,7 @@ GameObject:
   - component: {fileID: 5796344781842326771}
   - component: {fileID: 4344842845080326535}
   - component: {fileID: 3666400573665910914}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cap_Unwrapped009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29919,7 +29881,7 @@ GameObject:
   - component: {fileID: 4483920055637458506}
   - component: {fileID: 4294784803357982203}
   - component: {fileID: 7374067321106174035}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29965,7 +29927,7 @@ GameObject:
   - component: {fileID: 1736063129125323021}
   - component: {fileID: 6876229286485517192}
   - component: {fileID: 3127275088325670218}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Truba032
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30212,7 +30174,7 @@ GameObject:
   - component: {fileID: 9102017075541949955}
   - component: {fileID: 2573534886386126104}
   - component: {fileID: 2631041173892598117}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped032
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30291,7 +30253,7 @@ GameObject:
   - component: {fileID: 5190772220286881511}
   - component: {fileID: 8557944582433141152}
   - component: {fileID: 6403070444974443634}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaPovorot_Unwrapped18 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30525,7 +30487,7 @@ GameObject:
   - component: {fileID: 2461050229150108360}
   - component: {fileID: 3615264255236113956}
   - component: {fileID: 4527785444067487514}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Truba031
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30612,7 +30574,7 @@ GameObject:
   - component: {fileID: 2183880905367007635}
   - component: {fileID: 4560976707079485260}
   - component: {fileID: 1536664828649916151}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30669,7 +30631,7 @@ GameObject:
   - component: {fileID: 1524864689152728784}
   - component: {fileID: 660707777371897921}
   - component: {fileID: 6823781015922120699}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped042
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30687,7 +30649,7 @@ GameObject:
   - component: {fileID: 899214145868600282}
   - component: {fileID: 3843458855964112347}
   - component: {fileID: 3614350807407550697}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Truba019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30705,7 +30667,7 @@ GameObject:
   - component: {fileID: 3268048738946383155}
   - component: {fileID: 2674061926378322842}
   - component: {fileID: 2463287657184699996}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaPovorot_Unwrapped18 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31032,7 +30994,7 @@ GameObject:
   - component: {fileID: 2769261884787546839}
   - component: {fileID: 685365275839800027}
   - component: {fileID: 1533114532847690408}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31062,7 +31024,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6844819902694595640}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tubes_Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31233,7 +31195,7 @@ GameObject:
   - component: {fileID: 3600953293233450145}
   - component: {fileID: 5757664935500286862}
   - component: {fileID: 2629325135196662158}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31265,7 +31227,7 @@ GameObject:
   - component: {fileID: 2889901835265203203}
   - component: {fileID: 7297862196876380525}
   - component: {fileID: 1494414248052727532}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cap_Unwrapped001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31346,7 +31308,7 @@ GameObject:
   - component: {fileID: 7277316168754220014}
   - component: {fileID: 5492801724684374097}
   - component: {fileID: 3562691486638406817}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ShadowCaster3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31364,7 +31326,7 @@ GameObject:
   - component: {fileID: 6029826496076841574}
   - component: {fileID: 7086482507925185355}
   - component: {fileID: 3772691992155652605}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LightSwitch001_low_Unwrapped
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31776,7 +31738,7 @@ GameObject:
   - component: {fileID: 4445059629487835870}
   - component: {fileID: 6155789324722945014}
   - component: {fileID: 5601760434829544254}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LightSwitch_Unwrapped
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31794,7 +31756,7 @@ GameObject:
   - component: {fileID: 4813752838079036457}
   - component: {fileID: 1794238683667562868}
   - component: {fileID: 494085939602011447}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped031
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31812,7 +31774,7 @@ GameObject:
   - component: {fileID: 7083127559357546141}
   - component: {fileID: 3346017792562150909}
   - component: {fileID: 6915587689329200973}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31844,7 +31806,7 @@ GameObject:
   - component: {fileID: 1548203364165417918}
   - component: {fileID: 4188686243033326705}
   - component: {fileID: 1267980650833872187}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cap_Unwrapped014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31992,7 +31954,7 @@ GameObject:
   - component: {fileID: 3200603524787300419}
   - component: {fileID: 5192598228973955201}
   - component: {fileID: 4103296155629672045}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ValveHead_Unwrapped 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32018,7 +31980,7 @@ GameObject:
   - component: {fileID: 6828079865328367716}
   - component: {fileID: 7924660939555018021}
   - component: {fileID: 4342074278867254953}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cap_Unwrapped011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32036,7 +31998,7 @@ GameObject:
   - component: {fileID: 5560600322587747222}
   - component: {fileID: 292919830111192430}
   - component: {fileID: 2352942202752902907}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaPovorot_Unwrapped18 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32112,7 +32074,7 @@ GameObject:
   - component: {fileID: 2757793678488591988}
   - component: {fileID: 5926812586736565213}
   - component: {fileID: 5254255175757370100}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaPovorot_Unwrapped18 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32130,7 +32092,7 @@ GameObject:
   - component: {fileID: 2360904732455392257}
   - component: {fileID: 9144164466839790667}
   - component: {fileID: 5795752111805078295}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32217,7 +32179,7 @@ GameObject:
   - component: {fileID: 2859267757068140990}
   - component: {fileID: 6010584984649830962}
   - component: {fileID: 3855550824109763316}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cap_Unwrapped003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32249,7 +32211,7 @@ GameObject:
   - component: {fileID: 5299016132554268599}
   - component: {fileID: 2810431799820308430}
   - component: {fileID: 4825946793505454872}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaVilka_low_Unwrapped4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32334,7 +32296,7 @@ GameObject:
   - component: {fileID: 1303921722839178014}
   - component: {fileID: 840043753609729546}
   - component: {fileID: 3488819216045466501}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cap_Unwrapped013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32596,7 +32558,7 @@ GameObject:
   - component: {fileID: 6720086601892158553}
   - component: {fileID: 3262751292840298711}
   - component: {fileID: 8128257861761263996}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Truba030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32675,7 +32637,7 @@ GameObject:
   - component: {fileID: 9216299391402548519}
   - component: {fileID: 1883943091837122689}
   - component: {fileID: 3388454966273717341}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped035
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32935,7 +32897,7 @@ GameObject:
   - component: {fileID: 1896446453280873468}
   - component: {fileID: 286813655784388195}
   - component: {fileID: 8013833924092602456}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32953,7 +32915,7 @@ GameObject:
   - component: {fileID: 721391986798975517}
   - component: {fileID: 3525447844690646004}
   - component: {fileID: 7238210369644968583}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LeftNut_Unwrapped 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33046,7 +33008,7 @@ GameObject:
   - component: {fileID: 7799854754865072679}
   - component: {fileID: 8030148192375644334}
   - component: {fileID: 8968426920646793666}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Truba033
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33064,7 +33026,7 @@ GameObject:
   - component: {fileID: 4327607550523298326}
   - component: {fileID: 7610825377577369019}
   - component: {fileID: 2580951822956497070}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LowPlinth_Unwrapped
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33204,7 +33166,7 @@ GameObject:
   - component: {fileID: 5067274982157112737}
   - component: {fileID: 7882853352873804028}
   - component: {fileID: 700643161236866600}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaPovorot001_low_Unwrapped18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33281,7 +33243,7 @@ GameObject:
   - component: {fileID: 7204197407151306078}
   - component: {fileID: 1403004793669543715}
   - component: {fileID: 4155095854368085081}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaVilka_low_Unwrapped4 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33313,7 +33275,7 @@ GameObject:
   - component: {fileID: 8947202534142901194}
   - component: {fileID: 7715291288358163796}
   - component: {fileID: 3325218169641540022}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Truba025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33347,7 +33309,7 @@ GameObject:
   - component: {fileID: 8820048935854873567}
   - component: {fileID: 8838291395377823613}
   - component: {fileID: 2722667864613186320}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33511,7 +33473,7 @@ GameObject:
   - component: {fileID: 7949188178307168973}
   - component: {fileID: 4558959497072179617}
   - component: {fileID: 55233321766213784}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped033
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33529,7 +33491,7 @@ GameObject:
   - component: {fileID: 822765458772702197}
   - component: {fileID: 2819278141764953723}
   - component: {fileID: 1196874647759245446}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaPovorot_Unwrapped18 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33555,7 +33517,7 @@ GameObject:
   - component: {fileID: 1830210072466947273}
   - component: {fileID: 7010693097917060084}
   - component: {fileID: 4348059592761225401}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cap_Unwrapped004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33573,7 +33535,7 @@ GameObject:
   - component: {fileID: 2432215013370231246}
   - component: {fileID: 7321429008241248862}
   - component: {fileID: 3238370602673580793}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33630,7 +33592,7 @@ GameObject:
   - component: {fileID: 1043697071117927360}
   - component: {fileID: 1866860292488027156}
   - component: {fileID: 7207506205782281030}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LightningInRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33687,7 +33649,7 @@ GameObject:
   - component: {fileID: 311616673971841226}
   - component: {fileID: 2646640017531449908}
   - component: {fileID: 8639035205266563166}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33744,7 +33706,7 @@ GameObject:
   - component: {fileID: 7371032393341933313}
   - component: {fileID: 3230072931653296293}
   - component: {fileID: 2828565516995385330}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaPovorot_Unwrapped18 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33776,7 +33738,7 @@ GameObject:
   - component: {fileID: 1497913234316170599}
   - component: {fileID: 2946640193219245785}
   - component: {fileID: 3839155507469276328}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaPovorot_Unwrapped18 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33997,7 +33959,7 @@ GameObject:
   - component: {fileID: 5577116318065768198}
   - component: {fileID: 7044173669056389375}
   - component: {fileID: 2540211729334152239}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ValveBase_Unwrapped3 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34166,6 +34128,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6844819902694595640}
     m_Modifications:
+    - target: {fileID: 3078888183528483721, guid: eb62a0b18f30e4d4d93604bcaffe9280,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4040280324643874622, guid: eb62a0b18f30e4d4d93604bcaffe9280,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34221,6 +34188,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4472823099179039811, guid: eb62a0b18f30e4d4d93604bcaffe9280,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709649955647081462, guid: eb62a0b18f30e4d4d93604bcaffe9280,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6290183011239426417, guid: eb62a0b18f30e4d4d93604bcaffe9280,
         type: 3}
       propertyPath: m_Name
@@ -34230,6 +34207,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290183011239426417, guid: eb62a0b18f30e4d4d93604bcaffe9280,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb62a0b18f30e4d4d93604bcaffe9280, type: 3}
@@ -34467,7 +34449,7 @@ GameObject:
   - component: {fileID: 3305703040046543490}
   - component: {fileID: 6399290576295703953}
   - component: {fileID: 4883490122341517281}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RightNut001_low_Unwrapped
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34538,7 +34520,7 @@ GameObject:
   - component: {fileID: 1317254238107051357}
   - component: {fileID: 1237885354354486153}
   - component: {fileID: 3428138122482919976}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34571,7 +34553,7 @@ GameObject:
   - component: {fileID: 5134151087804261977}
   - component: {fileID: 4422376518673112935}
   - component: {fileID: 3759451864370376517}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Floor_Unwrapped
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34663,7 +34645,7 @@ GameObject:
   - component: {fileID: 8977069695179448959}
   - component: {fileID: 2930747276885811053}
   - component: {fileID: 8996266842132057831}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34964,7 +34946,7 @@ GameObject:
   - component: {fileID: 5117489186250080251}
   - component: {fileID: 6412856913547617092}
   - component: {fileID: 1614947502696158270}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Truba034
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35145,7 +35127,7 @@ GameObject:
   - component: {fileID: 8855919902183387712}
   - component: {fileID: 3917185434384258642}
   - component: {fileID: 1200709073589321072}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ValveHead001_low_Unwrapped
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35393,7 +35375,7 @@ GameObject:
   - component: {fileID: 1938700421162599022}
   - component: {fileID: 2601362868057290914}
   - component: {fileID: 1371995121975010269}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceThree_Unwrapped002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35539,19 +35521,13 @@ GameObject:
   - component: {fileID: 2632251241740353399}
   - component: {fileID: 4029944253406956731}
   - component: {fileID: 4884281908807977105}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4478698598523308599 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4478698597298339002, guid: 00719cdd9dc154945a769dc2ec64ef7c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1225029261}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4483920055637458506
 Transform:
   m_ObjectHideFlags: 0
@@ -35638,7 +35614,7 @@ GameObject:
   - component: {fileID: 3259422556172880145}
   - component: {fileID: 5066216993760743727}
   - component: {fileID: 2870006711189488347}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35711,7 +35687,7 @@ GameObject:
   - component: {fileID: 7848474236814228796}
   - component: {fileID: 6526042855937117446}
   - component: {fileID: 5454895063000046939}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped046
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35729,7 +35705,7 @@ GameObject:
   - component: {fileID: 5438894598034119734}
   - component: {fileID: 7270615390136595728}
   - component: {fileID: 4539853312391425412}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35747,7 +35723,7 @@ GameObject:
   - component: {fileID: 8826812655028816834}
   - component: {fileID: 2820459649707958190}
   - component: {fileID: 3181622052789975733}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cap_Unwrapped008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35804,7 +35780,7 @@ GameObject:
   - component: {fileID: 7270461386665361842}
   - component: {fileID: 745451541886357322}
   - component: {fileID: 2636498882866329903}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaPovorot_Unwrapped18 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35822,7 +35798,7 @@ GameObject:
   - component: {fileID: 6451248959013792684}
   - component: {fileID: 6007729302754286234}
   - component: {fileID: 7750336419745255204}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceTwo_Unwrapped001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35840,7 +35816,7 @@ GameObject:
   - component: {fileID: 150138460359579877}
   - component: {fileID: 241081239263264998}
   - component: {fileID: 1472612742035390777}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Truba036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35872,7 +35848,7 @@ GameObject:
   - component: {fileID: 5257191857415204868}
   - component: {fileID: 2077199032405162015}
   - component: {fileID: 8436221659334230285}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bolt001_low_Unwrapped
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35890,7 +35866,7 @@ GameObject:
   - component: {fileID: 6250507014382366792}
   - component: {fileID: 5293143968272940099}
   - component: {fileID: 1172299166761227404}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Truba020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35930,7 +35906,7 @@ GameObject:
   - component: {fileID: 9101177608411672228}
   - component: {fileID: 1949588768063894925}
   - component: {fileID: 5035225919774859270}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36001,7 +35977,7 @@ GameObject:
   - component: {fileID: 6161878282682101841}
   - component: {fileID: 1022893750881285197}
   - component: {fileID: 3389493175007057955}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped044
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36175,7 +36151,7 @@ GameObject:
   - component: {fileID: 7440061911902808433}
   - component: {fileID: 2381695835458245918}
   - component: {fileID: 5451892866018243984}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36193,7 +36169,7 @@ GameObject:
   - component: {fileID: 54526490828115712}
   - component: {fileID: 7573742852818154513}
   - component: {fileID: 6347687828797901478}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped043
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36211,7 +36187,7 @@ GameObject:
   - component: {fileID: 4166718032442323398}
   - component: {fileID: 9041901974902520430}
   - component: {fileID: 4851183299231184711}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped045
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36416,7 +36392,7 @@ GameObject:
   - component: {fileID: 83827094106819185}
   - component: {fileID: 4330296358216772891}
   - component: {fileID: 2695241465510256279}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaVilka_low_Unwrapped4 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36485,7 +36461,7 @@ GameObject:
   - component: {fileID: 6063611898992358156}
   - component: {fileID: 715897994510877089}
   - component: {fileID: 8835954294823469433}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36542,7 +36518,7 @@ GameObject:
   - component: {fileID: 1194735442078943523}
   - component: {fileID: 7473825640495980398}
   - component: {fileID: 6836935702894940547}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cap_Unwrapped006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36787,7 +36763,7 @@ GameObject:
   - component: {fileID: 7496456313303577900}
   - component: {fileID: 4238041893499957252}
   - component: {fileID: 7699898644325737466}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaPovorot_Unwrapped18 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36805,7 +36781,7 @@ GameObject:
   - component: {fileID: 8102160256085755088}
   - component: {fileID: 1529817607518353747}
   - component: {fileID: 5140605829835373961}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36843,7 +36819,7 @@ GameObject:
   - component: {fileID: 2279215077743584846}
   - component: {fileID: 4385799262489496401}
   - component: {fileID: 9000938263276150113}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped040
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37208,7 +37184,7 @@ GameObject:
   - component: {fileID: 1024224943464461899}
   - component: {fileID: 2611810144617981856}
   - component: {fileID: 805644184375907587}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Truba023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37373,7 +37349,7 @@ GameObject:
   - component: {fileID: 3328516941534462008}
   - component: {fileID: 176158365118150500}
   - component: {fileID: 1619684603243790819}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37454,7 +37430,7 @@ GameObject:
   - component: {fileID: 2031650617923831116}
   - component: {fileID: 6707771242471592991}
   - component: {fileID: 7921698658723509180}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaPovorot_Unwrapped18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37486,7 +37462,7 @@ GameObject:
   - component: {fileID: 6986076589434612107}
   - component: {fileID: 6621184570318899096}
   - component: {fileID: 2250518436337343192}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Truba028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37504,7 +37480,7 @@ GameObject:
   - component: {fileID: 8633078664122010702}
   - component: {fileID: 8187330240088002781}
   - component: {fileID: 4285500601032684567}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bolt_Unwrapped
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37594,7 +37570,7 @@ GameObject:
   - component: {fileID: 1355096087773473243}
   - component: {fileID: 4023248394439041724}
   - component: {fileID: 6440454875985594}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RightNut_Unwrapped 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37698,7 +37674,7 @@ GameObject:
   - component: {fileID: 140381648692099280}
   - component: {fileID: 1916064354643952643}
   - component: {fileID: 5511785163825676381}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaPovorot_Unwrapped18 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37716,7 +37692,7 @@ GameObject:
   - component: {fileID: 8296924564546461419}
   - component: {fileID: 2288076297043149424}
   - component: {fileID: 1816321839314302028}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37797,7 +37773,7 @@ GameObject:
   - component: {fileID: 170356287398520479}
   - component: {fileID: 8626644082919855331}
   - component: {fileID: 6579841964846878469}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cap_Unwrapped012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37815,7 +37791,7 @@ GameObject:
   - component: {fileID: 579545541724630378}
   - component: {fileID: 3030985312287056109}
   - component: {fileID: 645140322550232413}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37894,7 +37870,7 @@ GameObject:
   - component: {fileID: 2130035136941290274}
   - component: {fileID: 8703300086682416412}
   - component: {fileID: 8790718517196753361}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38028,7 +38004,7 @@ GameObject:
   - component: {fileID: 3653871910534380380}
   - component: {fileID: 8217243429412615801}
   - component: {fileID: 4993112486405785578}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38060,7 +38036,7 @@ GameObject:
   - component: {fileID: 7614582716235808367}
   - component: {fileID: 2276795560201854754}
   - component: {fileID: 3975174739689939663}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38209,7 +38185,7 @@ GameObject:
   - component: {fileID: 1226955864429909652}
   - component: {fileID: 4718804903816340384}
   - component: {fileID: 5643508730765054495}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38315,7 +38291,7 @@ GameObject:
   - component: {fileID: 3759414482640211663}
   - component: {fileID: 851807122863085519}
   - component: {fileID: 6506770855037201075}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaPovorot_Unwrapped18 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38372,7 +38348,7 @@ GameObject:
   - component: {fileID: 2855746740652545270}
   - component: {fileID: 5500824858166797317}
   - component: {fileID: 5853113873080844326}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaPovorot_Unwrapped18 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38459,7 +38435,7 @@ GameObject:
   - component: {fileID: 3828080890423208453}
   - component: {fileID: 7205757335927561121}
   - component: {fileID: 2090162533993772794}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaPovorot_Unwrapped18 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38477,7 +38453,7 @@ GameObject:
   - component: {fileID: 7622793480772530611}
   - component: {fileID: 507827532945076626}
   - component: {fileID: 6362090715100837506}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Truba026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38525,7 +38501,7 @@ GameObject:
   - component: {fileID: 2594335333457687381}
   - component: {fileID: 5500701300001261791}
   - component: {fileID: 4064055424673824063}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaPovorot_Unwrapped18 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38565,7 +38541,7 @@ GameObject:
   - component: {fileID: 5062402552374405399}
   - component: {fileID: 8133052814965950899}
   - component: {fileID: 1819770984891280267}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Socket_Unwrapped
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38835,7 +38811,7 @@ GameObject:
   - component: {fileID: 7334503058994818472}
   - component: {fileID: 653381058299519655}
   - component: {fileID: 3952820622352585170}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cap_Unwrapped005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38875,7 +38851,7 @@ GameObject:
   - component: {fileID: 8818327467537891236}
   - component: {fileID: 6274724430069177234}
   - component: {fileID: 1260542119127492841}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Truba038
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38960,7 +38936,7 @@ GameObject:
   - component: {fileID: 4404022261924415090}
   - component: {fileID: 449768802075560019}
   - component: {fileID: 7300855124284369601}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cap_Unwrapped007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39131,7 +39107,7 @@ GameObject:
   - component: {fileID: 8585133327050037134}
   - component: {fileID: 3333608754717735733}
   - component: {fileID: 9180118500992451643}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ValveBase001_low_Unwrapped3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39157,7 +39133,7 @@ GameObject:
   - component: {fileID: 654951089924653616}
   - component: {fileID: 859152423288101796}
   - component: {fileID: 7524886493053467808}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39175,7 +39151,7 @@ GameObject:
   - component: {fileID: 5365169795458018679}
   - component: {fileID: 1378047403430154083}
   - component: {fileID: 2405370724971903357}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Truba027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39229,7 +39205,7 @@ GameObject:
   - component: {fileID: 7116457432408510557}
   - component: {fileID: 784946613891225201}
   - component: {fileID: 4304231200273699365}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cap_Unwrapped002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39308,7 +39284,7 @@ GameObject:
   - component: {fileID: 3220639868216082087}
   - component: {fileID: 3761108992436443573}
   - component: {fileID: 3959393170723894129}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39379,7 +39355,7 @@ GameObject:
   - component: {fileID: 3973225681331408755}
   - component: {fileID: 5678547023523748480}
   - component: {fileID: 5731740889927459592}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39411,7 +39387,7 @@ GameObject:
   - component: {fileID: 4669041741516060152}
   - component: {fileID: 2032805018800143748}
   - component: {fileID: 5541843239296120285}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LeftNut001_low_Unwrapped
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39677,7 +39653,7 @@ GameObject:
   - component: {fileID: 4371570021750229610}
   - component: {fileID: 2779110589205825275}
   - component: {fileID: 1094947667260149969}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ValveBase_Unwrapped3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39695,7 +39671,7 @@ GameObject:
   - component: {fileID: 8337099906357517403}
   - component: {fileID: 6648356635371791046}
   - component: {fileID: 8009489770059373668}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaPovorot_Unwrapped18 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39713,7 +39689,7 @@ GameObject:
   - component: {fileID: 5300573908122892423}
   - component: {fileID: 6862577795021282112}
   - component: {fileID: 3528113914184386157}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrubaVilka001_low_Unwrap4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39743,7 +39719,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5006512736499735014}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Things+SSS_Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39775,7 +39751,7 @@ GameObject:
   - component: {fileID: 4988397871855533059}
   - component: {fileID: 2120855877484498944}
   - component: {fileID: 5584519427166996512}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped041
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39885,7 +39861,7 @@ GameObject:
   - component: {fileID: 7699846476567525463}
   - component: {fileID: 5170471929028684034}
   - component: {fileID: 3164671867220875324}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Truba029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39903,7 +39879,7 @@ GameObject:
   - component: {fileID: 5045960888586081052}
   - component: {fileID: 3995899098416989621}
   - component: {fileID: 6809321689534643074}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Truba037
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39937,7 +39913,7 @@ GameObject:
   - component: {fileID: 3300133999129753955}
   - component: {fileID: 264275873889890861}
   - component: {fileID: 8764392775454549134}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39969,7 +39945,7 @@ GameObject:
   - component: {fileID: 745937016502294442}
   - component: {fileID: 9144327969856358122}
   - component: {fileID: 1299790667687061875}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cap_Unwrapped010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40048,7 +40024,7 @@ GameObject:
   - component: {fileID: 2662350773706167604}
   - component: {fileID: 4072460278779066250}
   - component: {fileID: 7449218769581225264}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bolt_Unwrapped 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40066,7 +40042,7 @@ GameObject:
   - component: {fileID: 75450236639738477}
   - component: {fileID: 3440655809221270767}
   - component: {fileID: 2823558257573631795}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped034
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40092,7 +40068,7 @@ GameObject:
   - component: {fileID: 2248458864710427577}
   - component: {fileID: 8108585990105409198}
   - component: {fileID: 3305231573741189038}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RightNut_Unwrapped
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40277,7 +40253,7 @@ GameObject:
   - component: {fileID: 4505858514382216586}
   - component: {fileID: 3969655236648541865}
   - component: {fileID: 1643653325897933157}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HighPlinth_Unwrapped
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40295,7 +40271,7 @@ GameObject:
   - component: {fileID: 3909467139074643546}
   - component: {fileID: 690704983665830542}
   - component: {fileID: 7023559665269332706}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniseOne_Unwrapped001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40327,7 +40303,7 @@ GameObject:
   - component: {fileID: 2249579369748772714}
   - component: {fileID: 2531636988782716950}
   - component: {fileID: 9069143353784129262}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped038
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40345,7 +40321,7 @@ GameObject:
   - component: {fileID: 3915620583678843440}
   - component: {fileID: 5467026190160472226}
   - component: {fileID: 1257741021993433026}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CorniceThree_Unwrapped001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40430,7 +40406,7 @@ GameObject:
   - component: {fileID: 584525771582782599}
   - component: {fileID: 7077413782020833272}
   - component: {fileID: 660296375755834229}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Truba024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44635,7 +44611,7 @@ GameObject:
   - component: {fileID: 3773839231926886979}
   - component: {fileID: 6328191620121139121}
   - component: {fileID: 8945835873367727284}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Truba018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44653,7 +44629,7 @@ GameObject:
   - component: {fileID: 616345266084780512}
   - component: {fileID: 6422511905325245117}
   - component: {fileID: 4460918449107389270}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44679,7 +44655,7 @@ GameObject:
   - component: {fileID: 1509391832255119644}
   - component: {fileID: 4507193678049441127}
   - component: {fileID: 333334715501743196}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LeftNut_Unwrapped
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44764,7 +44740,7 @@ GameObject:
   - component: {fileID: 6170296961766199696}
   - component: {fileID: 6928416733364013766}
   - component: {fileID: 5080690807006525455}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Socket001_low_Unwrapped
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44782,7 +44758,7 @@ GameObject:
   - component: {fileID: 653984212275957376}
   - component: {fileID: 7170959823943808057}
   - component: {fileID: 5483482926880660685}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped037
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44883,7 +44859,7 @@ GameObject:
   - component: {fileID: 8933956467495241676}
   - component: {fileID: 724058760833591088}
   - component: {fileID: 8347935043379214766}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallLightning_Unwrapped020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
