@@ -244,7 +244,7 @@ MonoBehaviour:
     hdShadowInitParams:
       maxShadowRequests: 128
       directionalShadowsDepthBits: 32
-      shadowFilteringQuality: 0
+      shadowFilteringQuality: 1
       punctualLightShadowAtlas:
         shadowAtlasResolution: 4096
         shadowAtlasDepthBits: 32
@@ -269,7 +269,7 @@ MonoBehaviour:
       maxPunctualShadowMapResolution: 2048
       maxAreaShadowMapResolution: 2048
       supportScreenSpaceShadows: 0
-      maxScreenSpaceShadows: 2
+      maxScreenSpaceShadows: 16
     decalSettings:
       drawDistance: 1000
       atlasWidth: 4096
@@ -312,7 +312,7 @@ MonoBehaviour:
       ChromaticAberrationMaxSamples: 03000000060000000c000000
     lightSettings:
       useContactShadow:
-        m_Values: 
+        m_Values: 000000
         m_SchemaId:
           m_Id: 
     maximumLODLevel:
