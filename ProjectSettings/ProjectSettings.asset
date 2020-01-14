@@ -3,8 +3,18 @@
 --- !u!129 &1
 PlayerSettings:
   m_ObjectHideFlags: 0
+<<<<<<< Updated upstream
   serializedVersion: 20
   productGUID: 9aa442d25769f574889ffa0ee99af3e1
+=======
+<<<<<<< HEAD
+  serializedVersion: 18
+  productGUID: c0414faad76ee7c4f81f7920b9a3adda
+=======
+  serializedVersion: 20
+  productGUID: 9aa442d25769f574889ffa0ee99af3e1
+>>>>>>> Maxim
+>>>>>>> Stashed changes
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
