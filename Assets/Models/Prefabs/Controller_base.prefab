@@ -23,7 +23,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7052326072997793221
 Transform:
   m_ObjectHideFlags: 0
@@ -176,11 +176,11 @@ HingeJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3078888183528483721}
-  m_ConnectedBody: {fileID: 0}
+  m_ConnectedBody: {fileID: 3843214992898050549}
   m_Anchor: {x: 0, y: 7.797911, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -5.4078, y: 0.8666954, z: -4.7989926}
+  m_ConnectedAnchor: {x: 0.000000062299016, y: 10.68842, z: 0.0000018626444}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -423,11 +423,11 @@ HingeJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4472823099179039811}
-  m_ConnectedBody: {fileID: 0}
+  m_ConnectedBody: {fileID: 3843214992898050549}
   m_Anchor: {x: 0, y: 1.3920856, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -5.4078, y: 0.8666956, z: -4.8697867}
+  m_ConnectedAnchor: {x: 0.000000010719683, y: 1.8391602, z: -0.000022002487}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -517,7 +517,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4608083141316753145
 Transform:
   m_ObjectHideFlags: 0
@@ -670,11 +670,11 @@ HingeJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5709649955647081462}
-  m_ConnectedBody: {fileID: 0}
+  m_ConnectedBody: {fileID: 3843214992898050549}
   m_Anchor: {x: 0, y: 4.236067, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -5.4078, y: 0.8666957, z: -4.7990375}
+  m_ConnectedAnchor: {x: 0.00000006226614, y: 10.682817, z: -0.000035390243}
   m_UseSpring: 0
   m_Spring:
     spring: 0
