@@ -5,7 +5,7 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
 
-    public class ClapanController : MonoBehaviour
+    public abstract class ClapanController : MonoBehaviour
     {
         public GameObject RotatingPart;
         public HingeJoint hingeJoint;

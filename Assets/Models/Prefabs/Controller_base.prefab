@@ -685,10 +685,10 @@ HingeJoint:
     targetVelocity: 0
     force: 0
     freeSpin: 0
-  m_UseLimits: 0
+  m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 0
+    max: 325
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -753,7 +753,7 @@ GameObject:
   - component: {fileID: 9146226921732175876}
   - component: {fileID: 8138715787604327776}
   - component: {fileID: 3843214992898050549}
-  - component: {fileID: 3806782832196306987}
+  - component: {fileID: 640085526191381102}
   m_Layer: 0
   m_Name: Controller_base
   m_TagString: Controller
@@ -841,7 +841,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3806782832196306987
+--- !u!114 &640085526191381102
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -850,11 +850,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6290183011239426417}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad4b0cebefaf81c4c8d0d54ca9d0c9d5, type: 3}
+  m_Script: {fileID: 11500000, guid: b1b4515967915794fabf8017a2c2a232, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClapanBase: {fileID: 3078888183528483721}
-  ClapanRotate: {fileID: 5709649955647081462}
-  ClapanBaseRotate: {fileID: 4472823099179039811}
-  angle: 0
-  Tangle: 0
