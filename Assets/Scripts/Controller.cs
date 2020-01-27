@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Controller : MonoBehaviour
 {
-
     public abstract class ClapanController : MonoBehaviour
     {
         public GameObject RotatingPart;
@@ -22,7 +23,7 @@ public class Controller : MonoBehaviour
         public ClapanBase(GameObject targetObj)
         : base(targetObj)
         {
-
+            
         }
 
         public void DisconnectClapan()
@@ -51,13 +52,9 @@ public class Controller : MonoBehaviour
         {
             RotatePercent = Mathf.Abs(hingeJoint.angle - hingeJoint.limits.min) / Mathf.Abs(hingeJoint.limits.max - hingeJoint.limits.min);
         }
-        private void Update()
-        {
-            CalculateFromAngle();
-        }
     }
 
-    public class ClapanRotate : ControllerRotate
+    public class ClapanRotate : ClapanController
     {
         public ClapanRotate(GameObject targetObj)
         : base(targetObj)
@@ -66,17 +63,25 @@ public class Controller : MonoBehaviour
         }
     }
 
+    ClapanBase clapanBase;
+    ControllerRotate controllerRotate;
+    [SerializeField] GameObject ControllerRotateObj;
+    [SerializeField] GameObject ClapanBaseObj;
+    [SerializeField] GameObject ClapanCopy;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        clapanBase = new ClapanBase(ClapanBaseObj);
+        controllerRotate = new ControllerRotate(ControllerRotateObj);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
-
+        clapanBase.DisconnectClapan();
+        controllerRotate.CalculateFromAngle();
     }
 }
