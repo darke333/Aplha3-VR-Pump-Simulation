@@ -15,6 +15,8 @@ public class IpadControll : MonoBehaviour
     [SerializeField] Transform ButtonPlacer;
     [SerializeField] GameObject IPadButton;
     [SerializeField] GameObject WifiButton;
+    [SerializeField] List<Controller> controllers;
+    [SerializeField] Transform arrow;
     int index;
     
     // Start is called before the first frame update
