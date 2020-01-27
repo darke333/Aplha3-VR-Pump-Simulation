@@ -22374,6 +22374,22 @@ MonoBehaviour:
   ButtonPlacer: {fileID: 1962384855}
   IPadButton: {fileID: 1325722038}
   WifiButton: {fileID: 1000014377426672}
+--- !u!114 &1714380709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714380703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad77666522338cf49ba83b80b25e6476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachForce: 1000
+  attachForceDamper: 25
+  attachMode: 1
+  attachmentFlags: 69
 --- !u!4 &1714380710 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2294176788210867377, guid: dccb4c0ff1d338a4d91e5b95eea8911e,
