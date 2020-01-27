@@ -7,26 +7,33 @@ using UnityEngine.Video;
 
 public class IpadControll : MonoBehaviour
 {
-    [SerializeField] List<Texture2D> textures;
+    List<Texture2D> textures = new List<Texture2D>();
     [SerializeField] Material Screen;
     [SerializeField] VideoPlayer videoPlayer;
-    [SerializeField] List<FileInfo> videoClipsUrl;
+    List<FileInfo> videoClipsUrl = new List<FileInfo>();
+    [SerializeField] List<Transform> ButtonPlaces;
+    [SerializeField] Transform ButtonPlacer;
+    [SerializeField] GameObject IPadButton;
+    [SerializeField] GameObject WifiButton;
     int index;
+    
     // Start is called before the first frame update
     void Start()
     {
+        IPadButton.SetActive(true);
+        WifiButton.SetActive(false);
         videoPlayer.enabled = false;
-        index = 0;
+        index = 1;
         FillImageList();
         FillVideoArray();
-        Screen.SetTexture("_BaseColorMap", textures[index]);
+        Screen.SetTexture("_BaseColorMap", textures[0]);
     }
 
 
     void FillImageList()
     {
         string currentFolderPath = System.Environment.CurrentDirectory;
-        DirectoryInfo d = new DirectoryInfo(currentFolderPath + "/IpadMedia/" + "/images/");
+        DirectoryInfo d = new DirectoryInfo(currentFolderPath + "/Assets/" + "/IpadMedia/" + "/images/");
         FileInfo[] files = d.GetFiles("*.png");
         foreach (FileInfo fileInfo in files)
         {
@@ -49,10 +56,11 @@ public class IpadControll : MonoBehaviour
         return tex;
     }
 
+
     void FillVideoArray()
     {
         string currentFolderPath = System.Environment.CurrentDirectory;
-        DirectoryInfo d = new DirectoryInfo(currentFolderPath + "/IpadMedia/" + "/video/");
+        DirectoryInfo d = new DirectoryInfo(currentFolderPath + "/Assets/" + "/IpadMedia/" + "/video/");
         FileInfo[] files = d.GetFiles("*.mp4");
         //videoClipsUrl.AddRange(d.GetFiles("*.mp4"));
         videoClipsUrl.AddRange(files);
@@ -63,11 +71,28 @@ public class IpadControll : MonoBehaviour
     public void NextFile()
     {
         index++;
-        foreach(Texture texture in textures)
+        IPadButton.SetActive(true);
+        WifiButton.SetActive(false);
+        videoPlayer.enabled = false;
+        foreach (Texture texture in textures)
         {
             if(texture.name == index.ToString())
             {
                 Screen.SetTexture("_BaseColorMap", texture);
+                break;
+            }
+            if (texture.name == index.ToString() + "+")
+            {
+                Screen.SetTexture("_BaseColorMap", texture);
+                IPadButton.SetActive(false);
+                WifiButton.SetActive(true);
+                break;
+            }
+            if (texture.name == index.ToString() + "-")
+            {
+                Screen.SetTexture("_BaseColorMap", texture);
+                IPadButton.SetActive(false);
+                break;
             }
         }
 
@@ -75,10 +100,11 @@ public class IpadControll : MonoBehaviour
         {
             foreach (FileInfo fileInfo in videoClipsUrl)
             {
-                if (fileInfo.Name == index.ToString())
+                if (Path.GetFileNameWithoutExtension(fileInfo.Name) == index.ToString())
                 {
                     videoPlayer.enabled = true;
                     LoadVideo(fileInfo.FullName.Replace("\\", "/"));
+                    break;
                 }
             }
         }
@@ -103,6 +129,7 @@ public class IpadControll : MonoBehaviour
         if (Input.GetKeyDown("n"))
         {
             NextFile();
+            ButtonPlaces.Add(ButtonPlacer);
         }
     }
 }
