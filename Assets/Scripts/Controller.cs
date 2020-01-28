@@ -63,8 +63,8 @@ public class Controller : MonoBehaviour
         }
     }
 
-    ClapanBase clapanBase;
-    ControllerRotate controllerRotate;
+    [HideInInspector] public ClapanBase clapanBase;
+    [HideInInspector] public ControllerRotate controllerRotate;
     [SerializeField] GameObject ControllerRotateObj;
     [SerializeField] GameObject ClapanBaseObj;
     [SerializeField] GameObject ClapanCopy;

@@ -16,21 +16,33 @@ public class IpadControll : MonoBehaviour
     [SerializeField] GameObject IPadButton;
     [SerializeField] GameObject WifiButton;
     [SerializeField] List<Controller> controllers;
+    [SerializeField] List<Material> materials;
     [SerializeField] Transform arrow;
     int index;
+    int indexController;
+    bool PumpSetting;
+    
     
     // Start is called before the first frame update
     void Start()
     {
+        PumpSetting = false;
+        arrow.gameObject.SetActive(false);
         IPadButton.SetActive(true);
         WifiButton.SetActive(false);
         videoPlayer.enabled = false;
         index = 1;
+        indexController = 0;
         FillImageList();
         FillVideoArray();
         Screen.SetTexture("_BaseColorMap", textures[0]);
+        videoPlayer.loopPointReached += VideoPlayer_loopPointReached;
     }
 
+    private void VideoPlayer_loopPointReached(VideoPlayer source)
+    {
+        IPadButton.SetActive(true);
+    }
 
     void FillImageList()
     {
@@ -73,6 +85,8 @@ public class IpadControll : MonoBehaviour
     public void NextFile()
     {
         index++;
+        PumpSetting = false;
+        arrow.gameObject.SetActive(false);
         IPadButton.SetActive(true);
         WifiButton.SetActive(false);
         videoPlayer.enabled = false;
@@ -81,6 +95,11 @@ public class IpadControll : MonoBehaviour
             if(texture.name == index.ToString())
             {
                 Screen.SetTexture("_BaseColorMap", texture);
+                if (texture.name == (index-1).ToString() + "-")
+                {
+                    arrow.gameObject.SetActive(true);
+                    indexController++;
+                }
                 break;
             }
             if (texture.name == index.ToString() + "+")
@@ -93,6 +112,8 @@ public class IpadControll : MonoBehaviour
             if (texture.name == index.ToString() + "-")
             {
                 Screen.SetTexture("_BaseColorMap", texture);
+                PumpSetting = true;
+                arrow.gameObject.SetActive(true);
                 IPadButton.SetActive(false);
                 break;
             }
@@ -104,6 +125,7 @@ public class IpadControll : MonoBehaviour
             {
                 if (Path.GetFileNameWithoutExtension(fileInfo.Name) == index.ToString())
                 {
+                    IPadButton.SetActive(false);
                     videoPlayer.enabled = true;
                     LoadVideo(fileInfo.FullName.Replace("\\", "/"));
                     break;
@@ -125,13 +147,57 @@ public class IpadControll : MonoBehaviour
         videoPlayer.Play();
     }
 
+    void ArrowControll()
+    {
+        float rotationAngle = controllers[indexController].controllerRotate.RotatePercent;
+        Vector3 vector3 = new Vector3(0,-110 + rotationAngle * -220,0);
+        arrow.localEulerAngles = vector3;
+        if (arrow.localRotation.y > 0.71 || arrow.localRotation.y < -0.72)
+        {
+            foreach(Renderer renderer in arrow.GetComponentsInChildren<Renderer>())
+            {
+                renderer.material = materials[0];
+            }
+        }
+        else
+        {
+            if (arrow.localRotation.y > 0.45 || arrow.localRotation.y < -0.5)
+            {
+                foreach (Renderer renderer in arrow.GetComponentsInChildren<Renderer>())
+                {
+                    renderer.material = materials[1];
+                }
+            }
+            else
+            {
+                foreach (Renderer renderer in arrow.GetComponentsInChildren<Renderer>())
+                {
+                    renderer.material = materials[2];
+                }
+            }
+        }
+        if (rotationAngle > 40 && rotationAngle < 60)
+        {
+            foreach (Texture texture in textures)
+            {
+                if (texture.name == index.ToString() + "--")
+                {
+                    if (Screen.GetTexture("_BaseColorMap") != texture)
+                    {
+                        Screen.SetTexture("_BaseColorMap", texture);
+                        IPadButton.SetActive(true);
+                    }
+                }
+            }
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("n"))
+        if (PumpSetting)
         {
-            NextFile();
-            ButtonPlaces.Add(ButtonPlacer);
+            ArrowControll();
         }
     }
 }

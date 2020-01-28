@@ -8473,9 +8473,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610054454}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.0065, z: 0}
+  m_LocalPosition: {x: 0, y: -0.0065000285, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 631855970}
   - {fileID: 1036954748}
   m_Father: {fileID: 1714380710}
   m_RootOrder: 2
@@ -8566,11 +8567,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631855969}
-  m_LocalRotation: {x: -0, y: -0.732929, z: -0.000000007450581, w: 0.68030524}
-  m_LocalPosition: {x: 0.704003, y: 0.00014901161, z: 0.04399784}
-  m_LocalScale: {x: 0.039569233, y: 8.828858, z: 1.4352924}
+  m_LocalRotation: {x: 0.000000014901159, y: -0.9999795, z: -0.00000004470348, w: 0.00641407}
+  m_LocalPosition: {x: 0.00043826998, y: 0, z: 0.017628916}
+  m_LocalScale: {x: 0.002, y: 0.000010000002, z: 0.035882305}
   m_Children: []
-  m_Father: {fileID: 1036954748}
+  m_Father: {fileID: 610054455}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -94.26501, z: 0}
 --- !u!65 &631855971
@@ -8604,7 +8605,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d4ef478ccf9dba24baa9918883ff1ebd, type: 2}
+  - {fileID: 2100000, guid: a37926d6d00bc934a9ea33296ea28950, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14864,6 +14865,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &869825380 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 640085526191381102, guid: eb62a0b18f30e4d4d93604bcaffe9280,
+    type: 3}
+  m_PrefabInstance: {fileID: 3461004550228044566}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1b4515967915794fabf8017a2c2a232, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &910406058 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5487801314195124171, guid: 9a5dd9ea68509134ba7a4e74fc816595,
@@ -15692,10 +15705,9 @@ Transform:
   m_LocalRotation: {x: 0, y: -0.67559016, z: 0, w: 0.7372774}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.025, y: 0.0001, z: 0.025}
-  m_Children:
-  - {fileID: 631855970}
+  m_Children: []
   m_Father: {fileID: 610054455}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -85, z: 0}
 --- !u!135 &1036954749
 SphereCollider:
@@ -15728,7 +15740,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d4ef478ccf9dba24baa9918883ff1ebd, type: 2}
+  - {fileID: 2100000, guid: a37926d6d00bc934a9ea33296ea28950, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20518,6 +20530,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6374379401341457097, guid: add05e2073d5ecc488735d8f23106cd4, type: 3}
+--- !u!114 &1516868871 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 640085526191381102, guid: eb62a0b18f30e4d4d93604bcaffe9280,
+    type: 3}
+  m_PrefabInstance: {fileID: 545608125}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1b4515967915794fabf8017a2c2a232, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1517926674
 GameObject:
   m_ObjectHideFlags: 0
@@ -22682,8 +22706,16 @@ MonoBehaviour:
   ButtonPlacer: {fileID: 1962384855}
   IPadButton: {fileID: 1325722038}
   WifiButton: {fileID: 1000014377426672}
-  controllers: []
-  arrow: {fileID: 0}
+  controllers:
+  - {fileID: 869825380}
+  - {fileID: 1516868871}
+  - {fileID: 1787092564}
+  materials:
+  - {fileID: 2100000, guid: d4ef478ccf9dba24baa9918883ff1ebd, type: 2}
+  - {fileID: 2100000, guid: 9a046cc43c0ed5f4c96eb5dd502a5da5, type: 2}
+  - {fileID: 2100000, guid: a37926d6d00bc934a9ea33296ea28950, type: 2}
+  arrow: {fileID: 610054455}
+  rotationAngle: 0
 --- !u!114 &1714380709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23445,6 +23477,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 9173742500308743671, guid: add05e2073d5ecc488735d8f23106cd4, type: 3}
+--- !u!114 &1787092564 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 640085526191381102, guid: eb62a0b18f30e4d4d93604bcaffe9280,
+    type: 3}
+  m_PrefabInstance: {fileID: 1641212903}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1b4515967915794fabf8017a2c2a232, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1801969116
 GameObject:
   m_ObjectHideFlags: 0
