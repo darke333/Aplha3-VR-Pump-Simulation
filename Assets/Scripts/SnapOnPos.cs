@@ -6,8 +6,20 @@ using Valve.VR.InteractionSystem;
 
 public class SnapOnPos : MonoBehaviour
 {
-    [SerializeField] GameObject targetObj;
+    public GameObject targetObj;
     [SerializeField] Controller Controller;
+
+    private void Start()
+    {
+        GetComponent<Collider>().enabled = false;
+        GetComponent<MeshRenderer>().enabled = false;
+    }
+
+    private void OnEnable()
+    {
+        GetComponent<Collider>().enabled = false;
+        GetComponent<MeshRenderer>().enabled = false;
+    }
 
     private void OnTriggerEnter(Collider other)
     {

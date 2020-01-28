@@ -21,10 +21,11 @@ public class Controller : MonoBehaviour
 
     public class ClapanBase : ClapanController
     {
-        public ClapanBase(GameObject targetObj)
+        Controller controller;
+        public ClapanBase(GameObject targetObj, Controller Controller)
         : base(targetObj)
         {
-            
+            controller = Controller;
         }
 
         public void DisconnectClapan()
@@ -34,7 +35,7 @@ public class Controller : MonoBehaviour
                 if (Mathf.Abs(hingeJoint.angle - hingeJoint.limits.min) < 5)
                 {
                     Destroy(hingeJoint);
-                    transform.parent.SendMessage("ClapanDisconnected");
+                    controller.ClapanDisconnected();
                 }
             }            
         }
@@ -69,6 +70,7 @@ public class Controller : MonoBehaviour
     [HideInInspector] public ControllerRotate controllerRotate;
     [SerializeField] GameObject ControllerRotateObj;
     [SerializeField] GameObject ClapanBaseObj;
+    [SerializeField] GameObject ClapanCurrent;
     [SerializeField] GameObject ClapanCopy;
     [SerializeField] GameObject ClapanPlacer;
 
@@ -79,7 +81,7 @@ public class Controller : MonoBehaviour
     void Start()
     {
         ClapanPlacer.SetActive(false);
-        clapanBase = new ClapanBase(ClapanBaseObj);
+        clapanBase = new ClapanBase(ClapanBaseObj, this);
         controllerRotate = new ControllerRotate(ControllerRotateObj);
 
     }
@@ -95,10 +97,17 @@ public class Controller : MonoBehaviour
     }
 
     public void SnapClapan()
-    {
+    {        
         ClapanPlacer.SetActive(false);
-        Destroy(clapanBase.transform.parent.gameObject);
-        Instantiate(ClapanCopy).SetActive(true);
+        Destroy(ClapanCurrent);
+        ClapanCurrent = ClapanCopy;
+        ClapanCurrent.SetActive(true);
+        ClapanBaseObj = ClapanCurrent.transform.GetChild(0).gameObject;
+        clapanBase = new ClapanBase(ClapanBaseObj, this);
+        ClapanCopy = Instantiate(ClapanCurrent, ClapanCurrent.transform.position, ClapanCurrent.transform.rotation, ClapanCurrent.transform.parent);
+        ClapanPlacer.GetComponent<SnapOnPos>().targetObj = ClapanCurrent.transform.GetChild(0).gameObject;
+        ClapanCopy.SetActive(false);
+
     }
 
     // Update is called once per frame
