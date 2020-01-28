@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Controller : MonoBehaviour
 {
+    [SerializeField] float angle;
     public abstract class ClapanController : MonoBehaviour
     {
         public GameObject RotatingPart;
@@ -33,6 +34,7 @@ public class Controller : MonoBehaviour
                 if (Mathf.Abs(hingeJoint.angle - hingeJoint.limits.min) < 5)
                 {
                     Destroy(hingeJoint);
+                    transform.parent.SendMessage("ClapanDisconnected");
                 }
             }            
         }
@@ -50,7 +52,7 @@ public class Controller : MonoBehaviour
 
         public void CalculateFromAngle()
         {
-            RotatePercent = Mathf.Abs(hingeJoint.angle - hingeJoint.limits.min) / Mathf.Abs(hingeJoint.limits.max - hingeJoint.limits.min);
+            RotatePercent = Mathf.Abs(hingeJoint.angle - hingeJoint.limits.min)/145;
         }
     }
 
@@ -68,14 +70,35 @@ public class Controller : MonoBehaviour
     [SerializeField] GameObject ControllerRotateObj;
     [SerializeField] GameObject ClapanBaseObj;
     [SerializeField] GameObject ClapanCopy;
+    [SerializeField] GameObject ClapanPlacer;
+
+
 
 
     // Start is called before the first frame update
     void Start()
     {
+        ClapanPlacer.SetActive(false);
         clapanBase = new ClapanBase(ClapanBaseObj);
         controllerRotate = new ControllerRotate(ControllerRotateObj);
 
+    }
+
+    void ClapanDisconnected()
+    {
+        Invoke("ActivateClapan", 5f);
+    }
+
+    void ActivateClapan()
+    {
+        ClapanPlacer.SetActive(true);
+    }
+
+    public void SnapClapan()
+    {
+        ClapanPlacer.SetActive(false);
+        Destroy(clapanBase.transform.parent.gameObject);
+        Instantiate(ClapanCopy).SetActive(true);
     }
 
     // Update is called once per frame

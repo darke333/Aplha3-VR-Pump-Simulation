@@ -8464,7 +8464,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &610054455
 Transform:
   m_ObjectHideFlags: 0
@@ -18057,7 +18057,7 @@ Transform:
   m_GameObject: {fileID: 1325722038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.10001711, y: 0.1019158, z: 0.11510001}
+  m_LocalScale: {x: 0.45212737, y: 0.46071038, z: 0.7707867}
   m_Children:
   - {fileID: 1962384855}
   m_Father: {fileID: 1714380710}
@@ -22715,7 +22715,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 9a046cc43c0ed5f4c96eb5dd502a5da5, type: 2}
   - {fileID: 2100000, guid: a37926d6d00bc934a9ea33296ea28950, type: 2}
   arrow: {fileID: 610054455}
-  rotationAngle: 0
 --- !u!114 &1714380709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22728,7 +22727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffefbea063cab884ca33e5a449e5c22c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attachmentFlags: 69
+  attachmentFlags: 85
   attachmentOffset: {fileID: 0}
   catchingSpeedThreshold: -1
   releaseVelocityStyle: 1
@@ -29294,7 +29293,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962384854}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -29626,7 +29625,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050898091}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
