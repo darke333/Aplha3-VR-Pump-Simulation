@@ -73,7 +73,7 @@ LightmapSettings:
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 0
     m_MixedBakeMode: 0
-    m_BakeBackend: 2
+    m_BakeBackend: 1
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 3000
     m_PVRSampleCount: 5000
@@ -25629,8 +25629,8 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 560168365284436203}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &560168365284436205
-MeshRenderer:
+--- !u!137 &560168365284436205
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -25643,7 +25643,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -25668,6 +25668,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: -7421002155379407120, guid: fd421a2dca425454c874911dbb4eefd8, type: 3}
+  m_Bones: []
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 0}
+  m_AABB:
+    m_Center: {x: 0.538128, y: 0.14898749, z: 0.89350843}
+    m_Extent: {x: 0.71610403, y: 0.051195394, z: 0.32777944}
+  m_DirtyAABB: 0
 --- !u!1 &576819564084076236
 GameObject:
   m_ObjectHideFlags: 0
