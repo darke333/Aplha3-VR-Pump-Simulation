@@ -56,7 +56,7 @@ LightmapSettings:
   m_LightmapEditorSettings:
     serializedVersion: 12
     m_Resolution: 2
-    m_BakeResolution: 7
+    m_BakeResolution: 24
     m_AtlasSize: 2048
     m_AO: 0
     m_AOMaxDistance: 1
@@ -75,10 +75,10 @@ LightmapSettings:
     m_MixedBakeMode: 0
     m_BakeBackend: 1
     m_PVRSampling: 1
-    m_PVRDirectSampleCount: 3000
-    m_PVRSampleCount: 5000
+    m_PVRDirectSampleCount: 6000
+    m_PVRSampleCount: 3000
     m_PVRBounces: 3
-    m_PVREnvironmentSampleCount: 1000
+    m_PVREnvironmentSampleCount: 300
     m_PVREnvironmentReferencePointCount: 2048
     m_PVRFilteringMode: 2
     m_PVRDenoiserTypeDirect: 1
