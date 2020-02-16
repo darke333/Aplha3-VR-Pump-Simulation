@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using Valve.VR.InteractionSystem;
 
 public class Controller : MonoBehaviour
 {
@@ -36,6 +36,9 @@ public class Controller : MonoBehaviour
                 {
                     Destroy(hingeJoint);
                     controller.ClapanDisconnected();
+                    Hand.AttachmentFlags attachmentFlags = RotatingPart.GetComponent<ComplexThrowable>().attachmentFlags;
+                    Destroy(RotatingPart.GetComponent<ComplexThrowable>());
+                    RotatingPart.AddComponent<Throwable>().attachmentFlags = RotatingPart.GetComponent<ComplexThrowable>().attachmentFlags = attachmentFlags;
                 }
             }            
         }
@@ -68,8 +71,10 @@ public class Controller : MonoBehaviour
 
     [HideInInspector] public ClapanBase clapanBase;
     [HideInInspector] public ControllerRotate controllerRotate;
+    [HideInInspector] public ClapanRotate clapanRotate;
     [SerializeField] GameObject ControllerRotateObj;
     [SerializeField] GameObject ClapanBaseObj;
+    [SerializeField] GameObject ClapanRotateObj;
     [SerializeField] GameObject ClapanCurrent;
     [SerializeField] GameObject ClapanCopy;
     [SerializeField] GameObject ClapanPlacer;
@@ -83,12 +88,16 @@ public class Controller : MonoBehaviour
         ClapanPlacer.SetActive(false);
         clapanBase = new ClapanBase(ClapanBaseObj, this);
         controllerRotate = new ControllerRotate(ControllerRotateObj);
+        clapanRotate = new ClapanRotate(ClapanRotateObj);
 
     }
 
     void ClapanDisconnected()
     {
-        Invoke("ActivateClapan", 5f);
+        Hand.AttachmentFlags attachmentFlags = clapanRotate.RotatingPart.GetComponent<ComplexThrowable>().attachmentFlags;
+        Destroy(clapanRotate.RotatingPart.GetComponent<ComplexThrowable>());
+        clapanRotate.RotatingPart.AddComponent<Throwable>().attachmentFlags = clapanRotate.RotatingPart.GetComponent<ComplexThrowable>().attachmentFlags = attachmentFlags; Invoke("ActivateClapan", 2f);
+        Invoke("ActivateClapan", 2f);
     }
 
     void ActivateClapan()
@@ -115,5 +124,6 @@ public class Controller : MonoBehaviour
     {
         clapanBase.DisconnectClapan();
         controllerRotate.CalculateFromAngle();
+        angle = controllerRotate.RotatePercent;
     }
 }

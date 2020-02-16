@@ -19,6 +19,8 @@ public class SnapOnPos : MonoBehaviour
     {
         GetComponent<Collider>().enabled = false;
         GetComponent<MeshRenderer>().enabled = false;
+        targetObj.GetComponent<Interactable>().onAttachedToHand += SnapOnPos_onAttachedToHand;
+        targetObj.GetComponent<Interactable>().onDetachedFromHand += SnapOnPos_onDetachedFromHand;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -32,8 +34,7 @@ public class SnapOnPos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        targetObj.GetComponent<Interactable>().onAttachedToHand += SnapOnPos_onAttachedToHand;
-        targetObj.GetComponent<Interactable>().onDetachedFromHand += SnapOnPos_onDetachedFromHand;
+
     }
 
     private void SnapOnPos_onDetachedFromHand(Hand hand)

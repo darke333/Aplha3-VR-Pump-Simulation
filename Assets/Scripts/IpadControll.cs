@@ -21,6 +21,7 @@ public class IpadControll : MonoBehaviour
     int index;
     int indexController;
     bool PumpSetting;
+    [SerializeField] float percents;
     
     
     // Start is called before the first frame update
@@ -84,9 +85,14 @@ public class IpadControll : MonoBehaviour
 
     public void NextFile()
     {
+        arrow.gameObject.SetActive(false);
+        if (Screen.GetTexture("_BaseColorMap").name == index.ToString() + "--")
+        {
+            arrow.gameObject.SetActive(true);
+            indexController++;
+        }
         index++;
         PumpSetting = false;
-        arrow.gameObject.SetActive(false);
         IPadButton.SetActive(true);
         WifiButton.SetActive(false);
         videoPlayer.enabled = false;
@@ -95,11 +101,7 @@ public class IpadControll : MonoBehaviour
             if(texture.name == index.ToString())
             {
                 Screen.SetTexture("_BaseColorMap", texture);
-                if (texture.name == (index-1).ToString() + "-")
-                {
-                    arrow.gameObject.SetActive(true);
-                    indexController++;
-                }
+                int i = index - 1;
                 break;
             }
             if (texture.name == index.ToString() + "+")
@@ -150,7 +152,7 @@ public class IpadControll : MonoBehaviour
     void ArrowControll()
     {
         float rotationAngle = controllers[indexController].controllerRotate.RotatePercent;
-        Vector3 vector3 = new Vector3(0,-110 + rotationAngle * -220,0);
+        Vector3 vector3 = new Vector3(0,-110 + rotationAngle * 220,0);
         arrow.localEulerAngles = vector3;
         if (arrow.localRotation.y > 0.71 || arrow.localRotation.y < -0.72)
         {
@@ -176,11 +178,25 @@ public class IpadControll : MonoBehaviour
                 }
             }
         }
-        if (rotationAngle > 40 && rotationAngle < 60)
+        if (rotationAngle > 0.4 && rotationAngle < 0.6)
         {
             foreach (Texture texture in textures)
             {
                 if (texture.name == index.ToString() + "--")
+                {
+                    if (Screen.GetTexture("_BaseColorMap") != texture)
+                    {
+                        Screen.SetTexture("_BaseColorMap", texture);
+                        IPadButton.SetActive(true);
+                    }
+                }
+            }
+        }
+        else
+        {
+            foreach (Texture texture in textures)
+            {
+                if (texture.name == index.ToString() + "-")
                 {
                     if (Screen.GetTexture("_BaseColorMap") != texture)
                     {
@@ -199,5 +215,7 @@ public class IpadControll : MonoBehaviour
         {
             ArrowControll();
         }
+        ArrowControll();
+
     }
 }
