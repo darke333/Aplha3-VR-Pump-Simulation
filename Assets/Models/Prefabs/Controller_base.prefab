@@ -1553,8 +1553,10 @@ MonoBehaviour:
   angle: 0
   clapanBase: {fileID: 0}
   controllerRotate: {fileID: 0}
+  clapanRotate: {fileID: 0}
   ControllerRotateObj: {fileID: 4472823099179039811}
   ClapanBaseObj: {fileID: 3078888183528483721}
+  ClapanRotateObj: {fileID: 5709649955647081462}
   ClapanCurrent: {fileID: 2820645161516855125}
   ClapanCopy: {fileID: 2123541918097780128}
   ClapanPlacer: {fileID: 3894502584017549838}

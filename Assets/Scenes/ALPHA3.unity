@@ -9601,7 +9601,7 @@ Transform:
   - {fileID: 1714380710}
   - {fileID: 236684378}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1271334754
 GameObject:
@@ -10211,7 +10211,6 @@ GameObject:
   - component: {fileID: 1325722043}
   - component: {fileID: 1325722042}
   - component: {fileID: 1325722041}
-  - component: {fileID: 1325722040}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -10234,18 +10233,6 @@ Transform:
   m_Father: {fileID: 1714380710}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1325722040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1325722038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdc6e48706c13fa4a8f807ff0f16e9de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1325722041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10260,8 +10247,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movingPart: {fileID: 1962384855}
   localMoveDistance: {x: 0, y: -0.01, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.9
+  engageAtPercent: 0.5
+  disengageAtPercent: 0.5
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -10334,7 +10321,7 @@ MonoBehaviour:
   snapAttachEaseInCompleted: 0
   skeletonPoser: {fileID: 0}
   handFollowTransform: 0
-  highlightOnHover: 0
+  highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
 --- !u!65 &1325722043
@@ -14981,7 +14968,7 @@ MonoBehaviour:
   snapAttachEaseInCompleted: 0
   skeletonPoser: {fileID: 0}
   handFollowTransform: 1
-  highlightOnHover: 1
+  highlightOnHover: 0
   hideHighlight: []
   hoverPriority: 0
 --- !u!54 &1714380706
@@ -25258,8 +25245,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movingPart: {fileID: 77666966}
   localMoveDistance: {x: 0, y: -0.01, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.9
+  engageAtPercent: 0.5
+  disengageAtPercent: 0.5
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
