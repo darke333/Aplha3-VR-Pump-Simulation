@@ -2432,8 +2432,7 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3273305683818223947, guid: fd421a2dca425454c874911dbb4eefd8, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd421a2dca425454c874911dbb4eefd8, type: 3}
 --- !u!1 &268400695 stripped
 GameObject:
@@ -31180,13 +31179,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 560168366207772515, guid: ca412ca8c9a06e54c9886c4360fd3665,
-        type: 3}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 560168366207772515, guid: ca412ca8c9a06e54c9886c4360fd3665,
-        type: 3}
+    - target: {fileID: 0}
       propertyPath: m_ExternalAcceleration.y
       value: 0
       objectReference: {fileID: 0}
@@ -31265,9 +31262,7 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 560168366207772515, guid: ca412ca8c9a06e54c9886c4360fd3665, type: 3}
-    - {fileID: 560168366207772524, guid: ca412ca8c9a06e54c9886c4360fd3665, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca412ca8c9a06e54c9886c4360fd3665, type: 3}
 --- !u!1 &560168365284436204 stripped
 GameObject:
@@ -31275,8 +31270,8 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 560168365284436203}
   m_PrefabAsset: {fileID: 0}
---- !u!137 &560168365284436205
-SkinnedMeshRenderer:
+--- !u!23 &560168365284436205
+MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -31289,7 +31284,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -31314,18 +31309,6 @@ SkinnedMeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  serializedVersion: 2
-  m_Quality: 0
-  m_UpdateWhenOffscreen: 0
-  m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: -7421002155379407120, guid: fd421a2dca425454c874911dbb4eefd8, type: 3}
-  m_Bones: []
-  m_BlendShapeWeights: []
-  m_RootBone: {fileID: 0}
-  m_AABB:
-    m_Center: {x: 0.538128, y: 0.14898749, z: 0.89350843}
-    m_Extent: {x: 0.71610403, y: 0.051195394, z: 0.32777944}
-  m_DirtyAABB: 0
 --- !u!1 &576819564084076236
 GameObject:
   m_ObjectHideFlags: 0
