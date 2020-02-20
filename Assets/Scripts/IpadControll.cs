@@ -11,8 +11,7 @@ public class IpadControll : MonoBehaviour
     [SerializeField] Material Screen;
     [SerializeField] VideoPlayer videoPlayer;
     List<FileInfo> videoClipsUrl = new List<FileInfo>();
-    [SerializeField] List<Transform> ButtonPlaces;
-    [SerializeField] Transform ButtonPlacer;
+    [SerializeField] Transform ButtonPlaces;
     [SerializeField] GameObject IPadButton;
     [SerializeField] GameObject WifiButton;
     [SerializeField] List<Controller> controllers;
@@ -21,7 +20,7 @@ public class IpadControll : MonoBehaviour
     int index;
     int indexController;
     bool PumpSetting;
-    [SerializeField] float percents;
+    //[SerializeField] float percents;
     
     
     // Start is called before the first frame update
@@ -36,6 +35,7 @@ public class IpadControll : MonoBehaviour
         indexController = 0;
         FillImageList();
         FillVideoArray();
+        PlaceButton();
         Screen.SetTexture("_BaseColorMap", textures[0]);
         videoPlayer.loopPointReached += VideoPlayer_loopPointReached;
     }
@@ -101,7 +101,7 @@ public class IpadControll : MonoBehaviour
             if(texture.name == index.ToString())
             {
                 Screen.SetTexture("_BaseColorMap", texture);
-                int i = index - 1;
+                PlaceButton();
                 break;
             }
             if (texture.name == index.ToString() + "+")
@@ -127,6 +127,7 @@ public class IpadControll : MonoBehaviour
             {
                 if (Path.GetFileNameWithoutExtension(fileInfo.Name) == index.ToString())
                 {
+                    PlaceButton();
                     IPadButton.SetActive(false);
                     videoPlayer.enabled = true;
                     LoadVideo(fileInfo.FullName.Replace("\\", "/"));
@@ -134,6 +135,13 @@ public class IpadControll : MonoBehaviour
                 }
             }
         }
+    }
+
+    void PlaceButton()
+    {
+        Vector3 vector3 = IPadButton.transform.GetChild(0).transform.position - ButtonPlaces.transform.Find(index.ToString()).transform.position;
+        IPadButton.transform.position -= vector3;
+        IPadButton.transform.GetChild(0).transform.localScale = ButtonPlaces.transform.Find(index.ToString()).transform.localScale;
     }
 
     public void LoadVideo(string Url)
