@@ -84,6 +84,7 @@ GameObject:
   - component: {fileID: 6240807577747666299}
   - component: {fileID: 6755530926763105742}
   - component: {fileID: 3679518909833725660}
+  - component: {fileID: 2396423615985497148}
   m_Layer: 0
   m_Name: Clapan_base
   m_TagString: Untagged
@@ -219,7 +220,7 @@ MonoBehaviour:
   attachForce: 1000
   attachForceDamper: 10
   attachMode: 1
-  attachmentFlags: 69
+  attachmentFlags: 85
 --- !u!54 &3145885705518923513
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -328,6 +329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 640085526191381102}
   position: {fileID: 0}
+  DisolveScript: {fileID: 2396423615985497148}
 --- !u!114 &6755530926763105742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,6 +389,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GlowMaterial: {fileID: 2100000, guid: 2fd5692965ae7934c8c4e470a46b2d47, type: 2}
+--- !u!114 &2396423615985497148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3078888183528483721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60f9d1db44f45b4429a78aa3afa9bdcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisolveMaterial: {fileID: 2100000, guid: cc85af86889b1854fa5d8093d791dfaf, type: 2}
+  Disolving: 0
 --- !u!1 &3894502584017549838
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,6 +530,7 @@ GameObject:
   - component: {fileID: 5849735083999873537}
   - component: {fileID: 4302780127837070339}
   - component: {fileID: 7202612644294007457}
+  - component: {fileID: 4362747271684118301}
   m_Layer: 0
   m_Name: Clapan_rotate
   m_TagString: Untagged
@@ -759,7 +776,7 @@ MonoBehaviour:
   onHandHoverBegin:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3679518909833725660}
+      - m_Target: {fileID: 7202612644294007457}
         m_MethodName: GlowControll
         m_Mode: 6
         m_Arguments:
@@ -773,7 +790,7 @@ MonoBehaviour:
   onHandHoverEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3679518909833725660}
+      - m_Target: {fileID: 7202612644294007457}
         m_MethodName: GlowControll
         m_Mode: 6
         m_Arguments:
@@ -803,6 +820,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GlowMaterial: {fileID: 2100000, guid: 2fd5692965ae7934c8c4e470a46b2d47, type: 2}
+--- !u!114 &4362747271684118301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4250547702098024098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60f9d1db44f45b4429a78aa3afa9bdcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisolveMaterial: {fileID: 2100000, guid: cc85af86889b1854fa5d8093d791dfaf, type: 2}
+  Disolving: 0
 --- !u!1 &4472823099179039811
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,7 +988,7 @@ MonoBehaviour:
   attachForce: 100000
   attachForceDamper: 10
   attachMode: 1
-  attachmentFlags: 69
+  attachmentFlags: 85
 --- !u!54 &8147298118906596457
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1067,7 +1098,7 @@ MonoBehaviour:
   onHandHoverBegin:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3679518909833725660}
+      - m_Target: {fileID: 7291722177028132188}
         m_MethodName: GlowControll
         m_Mode: 6
         m_Arguments:
@@ -1081,7 +1112,7 @@ MonoBehaviour:
   onHandHoverEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3679518909833725660}
+      - m_Target: {fileID: 7291722177028132188}
         m_MethodName: GlowControll
         m_Mode: 6
         m_Arguments:
@@ -1131,6 +1162,7 @@ GameObject:
   - component: {fileID: 8820374321399949127}
   - component: {fileID: 7671891455669099}
   - component: {fileID: 6731055207917903963}
+  - component: {fileID: 8738076766603019151}
   m_Layer: 0
   m_Name: Clapan_base
   m_TagString: Untagged
@@ -1266,7 +1298,7 @@ MonoBehaviour:
   attachForce: 1000
   attachForceDamper: 10
   attachMode: 1
-  attachmentFlags: 69
+  attachmentFlags: 85
 --- !u!54 &2329418815321849223
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1375,6 +1407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 640085526191381102}
   position: {fileID: 0}
+  DisolveScript: {fileID: 0}
 --- !u!114 &7671891455669099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1390,7 +1423,7 @@ MonoBehaviour:
   onHandHoverBegin:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3679518909833725660}
+      - m_Target: {fileID: 6731055207917903963}
         m_MethodName: GlowControll
         m_Mode: 6
         m_Arguments:
@@ -1404,7 +1437,7 @@ MonoBehaviour:
   onHandHoverEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3679518909833725660}
+      - m_Target: {fileID: 6731055207917903963}
         m_MethodName: GlowControll
         m_Mode: 6
         m_Arguments:
@@ -1434,6 +1467,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GlowMaterial: {fileID: 2100000, guid: 2fd5692965ae7934c8c4e470a46b2d47, type: 2}
+--- !u!114 &8738076766603019151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4620174557716764045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60f9d1db44f45b4429a78aa3afa9bdcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisolveMaterial: {fileID: 2100000, guid: cc85af86889b1854fa5d8093d791dfaf, type: 2}
+  Disolving: 0
 --- !u!1 &5709649955647081462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,6 +1500,7 @@ GameObject:
   - component: {fileID: 9129709620304161409}
   - component: {fileID: 1475065367162910982}
   - component: {fileID: 8219878504355815297}
+  - component: {fileID: 2164301620145470245}
   m_Layer: 0
   m_Name: Clapan_rotate
   m_TagString: Untagged
@@ -1588,7 +1636,7 @@ MonoBehaviour:
   attachForce: 1000
   attachForceDamper: 10
   attachMode: 1
-  attachmentFlags: 69
+  attachmentFlags: 85
 --- !u!54 &851621675360553608
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1698,7 +1746,7 @@ MonoBehaviour:
   onHandHoverBegin:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3679518909833725660}
+      - m_Target: {fileID: 8219878504355815297}
         m_MethodName: GlowControll
         m_Mode: 6
         m_Arguments:
@@ -1712,7 +1760,7 @@ MonoBehaviour:
   onHandHoverEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3679518909833725660}
+      - m_Target: {fileID: 8219878504355815297}
         m_MethodName: GlowControll
         m_Mode: 6
         m_Arguments:
@@ -1742,6 +1790,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GlowMaterial: {fileID: 2100000, guid: 2fd5692965ae7934c8c4e470a46b2d47, type: 2}
+--- !u!114 &2164301620145470245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5709649955647081462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60f9d1db44f45b4429a78aa3afa9bdcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisolveMaterial: {fileID: 2100000, guid: cc85af86889b1854fa5d8093d791dfaf, type: 2}
+  Disolving: 0
 --- !u!1 &6290183011239426417
 GameObject:
   m_ObjectHideFlags: 0

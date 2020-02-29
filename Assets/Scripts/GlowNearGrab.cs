@@ -9,9 +9,13 @@ public class GlowNearGrab : MonoBehaviour
     [SerializeField] Material GlowMaterial;
     Material StartMaterial;
 
-    private void Start()
+    private void OnEnable()
     {
         StartMaterial = GetComponent<Renderer>().material;
+    }
+
+    private void Start()
+    {
     }
 
     public void GlowControll(bool isGlowing)
