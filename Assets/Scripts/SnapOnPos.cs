@@ -8,19 +8,26 @@ public class SnapOnPos : MonoBehaviour
 {
     public GameObject targetObj;
     [SerializeField] Controller Controller;
+    [SerializeField] GameObject Rotator;
 
     private void Start()
     {
-        GetComponent<Collider>().enabled = false;
-        GetComponent<MeshRenderer>().enabled = false;
+        OnOffProp(false);
     }
 
     private void OnEnable()
     {
-        GetComponent<Collider>().enabled = false;
-        GetComponent<MeshRenderer>().enabled = false;
+        OnOffProp(false);
         targetObj.GetComponent<Interactable>().onAttachedToHand += SnapOnPos_onAttachedToHand;
         targetObj.GetComponent<Interactable>().onDetachedFromHand += SnapOnPos_onDetachedFromHand;
+    }
+
+    void OnOffProp(bool switcher)
+    {
+        GetComponent<Collider>().enabled = switcher;
+        GetComponent<MeshRenderer>().enabled = switcher;
+        Rotator.GetComponent<Collider>().enabled = switcher;
+        Rotator.GetComponent<MeshRenderer>().enabled = switcher;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -39,13 +46,11 @@ public class SnapOnPos : MonoBehaviour
 
     private void SnapOnPos_onDetachedFromHand(Hand hand)
     {
-        GetComponent<Collider>().enabled = false;
-        GetComponent<MeshRenderer>().enabled = false;
+        OnOffProp(false);
     }
 
     private void SnapOnPos_onAttachedToHand(Hand hand)
     {
-        GetComponent<Collider>().enabled = true;
-        GetComponent<MeshRenderer>().enabled = true;
+        OnOffProp(true);
     }
 }

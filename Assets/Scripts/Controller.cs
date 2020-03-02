@@ -87,7 +87,7 @@ public class Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ClapanPlacer.SetActive(false);
+        ClapanPlacer.transform.parent.gameObject.SetActive(false);
         clapanBase = new ClapanBase(ClapanBaseObj, this);
         controllerRotate = new ControllerRotate(ControllerRotateObj);
         clapanRotate = new ClapanRotate(ClapanRotateObj);
@@ -103,12 +103,12 @@ public class Controller : MonoBehaviour
 
     void ActivateClapan()
     {
-        ClapanPlacer.SetActive(true);
+        ClapanPlacer.transform.parent.gameObject.SetActive(true);
     }
 
     public void SnapClapan()
     {        
-        ClapanPlacer.SetActive(false);
+        ClapanPlacer.transform.parent.gameObject.SetActive(false);
         Destroy(ClapanCurrent);
         ClapanCurrent = ClapanCopy;
         ClapanCurrent.SetActive(true);
